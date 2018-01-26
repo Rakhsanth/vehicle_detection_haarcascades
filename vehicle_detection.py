@@ -8,7 +8,9 @@ cascade_src = 'cars.xml'
 video_src = 'dataset/video1.avi'
 #video_src = 'dataset/video2.avi'
 #For capturing from video file
-cap = cv2.VideoCapture(video_src)
+#cap = cv2.VideoCapture(video_src)
+#For realtime video capturing
+cap = cv2.VideoCapture(0)
 car_cascade = cv2.CascadeClassifier(cascade_src)
 
 while True:
